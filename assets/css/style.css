@@ -154,13 +154,17 @@ h4 {
 }
 
 /*SECTION PORTFOLIO*/
+.sec--port {
+  background-image: url(../images/portfolioimage/bgportfolio.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 #sec--portfolio-container {
   display: flex;
   flex-direction: column;
   height: 910px;
   width: 100%;
   color: var(--color-3);
-  background-image: url(../images/portfolioimage/portteste.png);
 }
 #portfolio--text-content {
   margin-top: 40px;
@@ -216,12 +220,12 @@ h4 {
 
 /* SESSÃO CONTATO */
 
-.sec--services {
+.sec--contact {
   width: 100%;
   height: 500px;
   background-color: var(--color-2);
 }
-#section--services-container {
+#section--contact-container {
   display: flex;
   justify-content: flex-end;
 }
