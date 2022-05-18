@@ -1,0 +1,240 @@
+* {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+:root {
+  --color-1: #1a2029;
+  --color-2: #131820;
+  --color-3: #9c9c9c;
+  --color-4: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* CONTAINER GLOBAL*/
+.all--container {
+  margin: auto;
+  width: 1400px;
+  max-height: 100%;
+}
+/*FIM CONTAINER GLOBAL*/
+
+/*MAIN*/
+main {
+  width: 100%;
+  background-color: var(--color-1);
+}
+/* SECTION */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  background: rgba(39, 36, 36, 0.137);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(37, 37, 37, 0.631);
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+#header--container-logo img {
+  margin-left: -10px;
+}
+#header--container-navigation {
+  display: flex;
+}
+#header--container-navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header--container-navigation li,
+span {
+  padding-right: 10px;
+  list-style: none;
+  color: #ff0000;
+}
+#header--container-navigation a {
+  padding: 10px;
+  color: var(--color-3);
+  text-decoration: none;
+}
+#header--container-navigation a:hover {
+  border-bottom: 2px solid var(--color-3);
+}
+/*FIM HEADER */
+
+/*section home */
+.sec--home {
+  background-image: url(../images/homeimages/teste.png);
+  background-repeat: no-repeat;
+  height: 900px;
+}
+#sec--home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#home--content-desc {
+  color: var(--color-3);
+}
+#home--content-desc p {
+  margin: 10px;
+  font-size: 20px;
+}
+#home--content-desc h1 {
+  font-size: 60px;
+}
+#home--content-desc h4 {
+  font-size: 40px;
+  font-weight: 300;
+}
+#home--content-desc h1,
+h4 {
+  text-align: center;
+  margin: 0;
+}
+#home--content-desc span {
+  color: var(--color-3);
+}
+
+/* Section about*/
+.sec--about {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 500px;
+  background-color: var(--color-2);
+}
+#sec--about-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+#about--content-image img {
+  width: 400px;
+}
+#about--content-desc {
+  color: var(--color-4);
+  width: 500px;
+}
+#about--content-desc {
+  line-height: 34px;
+}
+#about--content-desc p::first-letter {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+/*SECTION PORTFOLIO*/
+#sec--portfolio-container {
+  display: flex;
+  flex-direction: column;
+  height: 910px;
+  width: 100%;
+  color: var(--color-3);
+  background-image: url(../images/portfolioimage/portteste.png);
+}
+#portfolio--text-content {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+#porfolio--container {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  grid-template-areas: "item1 item2";
+  width: 100%;
+}
+#port--container-item {
+  display: flex;
+  align-items: flex-end;
+  height: 300px;
+  width: 600px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-image: url("../images/projetosimages/starbucksbackground.jpg");
+  background-size: cover;
+}
+#port--text {
+  display: flex;
+  border-radius: 0px 0px 9px 9px;
+  height: 50%;
+  width: 100%;
+  background-color: #000;
+}
+#informations {
+  flex: 1;
+  margin-left: 10px;
+}
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+#github {
+  width: 35px;
+  fill: #fff;
+}
+#showsite {
+  width: 35px;
+  fill: #fff;
+}
+#visitrepository {
+  margin: auto;
+}
+
+/* SESSÃO CONTATO */
+
+.sec--services {
+  width: 100%;
+  height: 500px;
+  background-color: var(--color-2);
+}
+#section--services-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-3);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-2);
+  border-radius: 50px;
+}
