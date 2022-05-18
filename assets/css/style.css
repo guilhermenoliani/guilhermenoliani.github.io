@@ -62,6 +62,7 @@ header {
 }
 #header--container-logo img {
   margin-left: -10px;
+  cursor: pointer;
 }
 #header--container-navigation {
   display: flex;

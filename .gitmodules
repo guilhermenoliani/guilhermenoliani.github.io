@@ -1,0 +1,3 @@
+[submodule "page/portfolio/starbuckssite"]
+	path = page/portfolio/starbuckssite
+	url = ../page/portfolio/starbuckssite/index.html

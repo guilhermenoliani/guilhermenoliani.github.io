@@ -4,7 +4,7 @@ let projetosJson = [
     name: "Starbucks",
     img: "../assets/images/projetosimages/star.jpg",
     link: "https://github.com/guilhermenoliani/starbucks_replica",
-    site: "../page/portfolio/starbucks/index.html",
+    site: "../page/portfolio/starbuckssite/index.html",
     desc: "Este projeto é uma re-criação da página principal da starbucks. Utilizado HTML5 e CSS3",
   },
   {

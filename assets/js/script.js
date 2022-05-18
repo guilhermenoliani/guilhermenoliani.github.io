@@ -2,6 +2,10 @@
 const qS = (el) => document.querySelector(el);
 const qsAll = (el) => document.querySelectorAll(el);
 
+qS("#header--container-logo img").addEventListener("click", () => {
+  window.scrollTo(0);
+});
+
 projetosJson.map((item, index) => {
   let projectsItem = qS("#port--container-item").cloneNode(true);
 
