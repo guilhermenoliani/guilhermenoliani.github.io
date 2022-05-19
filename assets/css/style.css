@@ -1,6 +1,9 @@
 * {
   font-family: "Helvetica", Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --color-1: #1a2029;
   --color-2: #131820;
@@ -102,6 +105,7 @@ span {
   width: 100%;
 }
 #home--content-desc {
+  width: 605px;
   color: var(--color-3);
 }
 #home--content-desc p {
@@ -191,7 +195,7 @@ h4 {
 #port--text {
   display: flex;
   border-radius: 0px 0px 9px 9px;
-  height: 150px;
+  height: 120px;
   width: 600px;
   background-color: #000;
   position: absolute;
@@ -231,9 +235,12 @@ h4 {
 }
 #section--contact-container {
   display: flex;
-  justify-content: flex-end;
+  height: 400px;
 }
-
+#form--container {
+  display: flex;
+  margin: auto;
+}
 /*SCROLLBAR*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -264,4 +271,152 @@ h4 {
 #header--container-navigation button a {
   color: #000;
   cursor: pointer;
+}
+
+form {
+  display: flex;
+}
+.group {
+  position: relative;
+  margin-left: 100px;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+  color: #ff0000; /* COR DA LETRA*/
+}
+
+.input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@media (max-width: 1272px) {
+  #sec--home-container {
+    flex-direction: column;
+  }
+  #porfolio--container {
+    grid-template-areas: "item";
+  }
+  #sec--portfolio-container {
+    height: 1300px;
+  }
+  #sec--about-container {
+    flex-direction: column;
+  }
+  .sec--about {
+    height: 100%;
+  }
+}
+@media (max-width: 670px) {
+  #port--container-item {
+    width: 500px;
+    height: 264px;
+  }
+  #port--text {
+    width: 500px;
+    height: 100px;
+  }
+  #informations p {
+    display: none;
+  }
+}
+
+.typewriter::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
