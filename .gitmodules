@@ -1,7 +1,0 @@
-[submodule "page/portfolio/starbuckssite"]
-	path = page/portfolio/starbuckssite
-	url = https://github.com/guilhermenoliani/starbucks_replica
-
-[submodule "page/portfolio/urna"]
-	path= page/portfolio/urna
-	url= https://github.com/guilhermenoliani/urna-eletronica

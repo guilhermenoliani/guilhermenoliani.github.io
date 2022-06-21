@@ -1,190 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta author="Guilherme Oliani" />
+    <meta name="description" content="Desenvolvedor Front-end" />
+    <meta name="robots" content="all" />
+    <meta
+      name="keywords"
+      content="desenvolvedor, sites, frontend, front-end, Guilherme Oliani, Guilherme, tecnologias, portfolio, freelancer, Gui, html"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/logo.svg"
+      type="image/x-icon"
+    />
+
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable= no"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Guilherme Oliani | Desenvolvedor Front-end</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Guilherme Oliani | Portfólio</title>
   </head>
   <body>
     <header>
-      <div class="all--container">
-        <div id="header--container">
-          <div id="header--container-logo">
-            <img src="./assets/images/logo/logo.svg" alt="" />
-          </div>
-          <div id="header--container-navigation">
-            <nav>
-              <ul>
-                <li><a href=""> Sobre</a></li>
-                <li><a href=""> Portfólio </a></li>
-                <li><a href="">Contato</a></li>
-                <span>|</span>
-                <button>
-                  <a href="">Baixar Currículo</a>
-                </button>
-              </ul>
-            </nav>
-          </div>
+      <div id="container-header">
+        <div id="logo-header">
+          <img src="./src/assets/images/logo.svg" alt="" />
+        </div>
+        <div id="nav-mobile-header"></div>
+        <div id="nav-header">
+          <nav>
+            <ul>
+              <li>SOBRE</li>
+              <li>PORTFÓLIO</li>
+              <li>CONTATO</li>
+              <a href="./src/assets/document/guilherme-cv.pdf" download
+                >CURRÍCULO</a
+              >
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
+    <div id="progress"></div>
+    <aside>
+      <div id="container-aside">
+        <div id="menu-close"></div>
+        <div id="nav-mobile-aside">
+          <nav>
+            <ul>
+              <li>SOBRE</li>
+              <li>PORTFÓLIO</li>
+              <li>CONTATO</li>
+              <a href="./src/assets/document/guilherme-cv.pdf" download
+                >BAIXAR CURRÍCULO</a
+              >
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
     <main>
-      <!--SESSÃO HOME-->
-
-      <section class="sec--home">
-        <div class="all--container">
-          <div id="sec--home-container">
-            <div id="home--content-desc">
-              <p><span>//</span>Olá, meu nome é</p>
-              <h1>Guilherme Oliani</h1>
-              <h4 class="typewriter">Desenvolvedor Front-end | Web</h4>
-            </div>
-            <div id="home--content-image">
+      <section id="home">
+        <div id="container-home">
+          <div id="content-home">
+            <h3><span>//</span> Olá, eu sou o</h3>
+            <h1>Guilherme Oliani</h1>
+            <p>Desenvolvedor <span>Front-end</span></p>
+          </div>
+          <div id="image-home">
+            <img src="./src/assets/images/home-image.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div id="container-about">
+          <div id="image-about">
+            <img src="./src/assets/images/guilherme.svg" alt="" />
+          </div>
+          <div id="text-about">
+            <h1>Sobre mim <span>{ }</span></h1>
+            <p>
+              Meu nome é Guilherme, tenho 23 anos e sou desenvolvedor front-end.
+              Onde atuo com a stack JavaScript / ES6+, com conhecimentos
+              aprofundados em manipulação de DOM, requisições e assíncronismo.
+              Tendo criado vários projetos pessoais do zero e expêriencia como
+              freelancer. No momento estou estudando Typescript e ReactJs para
+              aprimorar meus conhecimentos como desenvolvedor front end. Ótima
+              comunicação e fácil habilidade de trabalhar em grupo.
+            </p>
+            <div id="social-about">
               <img
-                src="./assets/images/homeimages//homeimage.svg"
-                width="500px"
+                class="insta"
+                src="./src/assets/images/instagram.svg"
                 alt=""
               />
+              <img
+                class="linkedin"
+                src="./src/assets/images/linkedin.svg"
+                alt=""
+              />
+              <img class="github" src="./src/assets/images/github.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
-
-      <!--SESSÃO SOBRE MIM-->
-
-      <section class="sec--about">
-        <div class="all--container">
-          <div id="sec--about-container">
-            <div id="about--content-image">
-              <img src="./assets/images/aboutimages/eu.png" alt="" />
-            </div>
-            <div id="about--content-desc">
-              <h1>Sobre mim</h1>
-              <p>
-                Lorem ipsum aadolor sit amet consectetur adipisicing elit.
-                Fugiat, nemo. Ipsum repellendus fugiat eligendi asperiores earum
-                debitis incidunt, soluta ducimus quia minima ad doloribus
-                repudiandae odio tenetur molestias corporis est!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--SESSÃO DO PORTFÓLIO-->
-
-      <section class="sec--port">
-        <div class="all--container">
-          <div id="sec--portfolio-container">
-            <div id="portfolio--text-content">
-              <h1>Portfólio</h1>
-            </div>
-            <div id="porfolio--container">
-              <!-- CLONAR AQUI-->
-              <!--Clonar isto-->
-              <div class="modelo">
-                <div id="port--container-item">
-                  <div id="port-image--container">
-                    <img src="/assets/images/projetosimages/star.jpg" alt="" />
-                  </div>
-
-                  <div id="port--text">
-                    <div id="informations">
-                      <!--titulo-->
-                      <h1></h1>
-
-                      <!--descrição-->
-                      <p></p>
-                    </div>
-                    <div id="links">
-                      <!--ADICIONAR LINKS-->
-                      <div id="github" title="Visitar repositório">
-                        <svg viewBox="0 0 128 128">
-                          <g>
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
-                            ></path>
-                            <path
-                              d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
-                            ></path>
-                          </g>
-                        </svg>
-                      </div>
-                      <div id="showsite" title="visitar site">
-                        <svg
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M12 2.25A9.75 9.75 0 0 0 2.25 12c0 5.384 4.365 9.75 9.75 9.75 5.384 0 9.75-4.366 9.75-9.75 0-5.385-4.366-9.75-9.75-9.75Z"
-                          ></path>
-                          <path
-                            d="M12 2.25c-2.722 0-5.28 4.365-5.28 9.75 0 5.384 2.56 9.75 5.281 9.75 2.722 0 5.282-4.366 5.282-9.75 0-5.385-2.56-9.75-5.282-9.75Z"
-                          ></path>
-                          <path
-                            d="M5.5 5.5C7.293 6.773 9.55 7.532 12 7.532c2.451 0 4.708-.76 6.5-2.032"
-                          ></path>
-                          <path
-                            d="M18.5 18.5c-1.792-1.272-4.049-2.031-6.5-2.031-2.45 0-4.707.759-6.5 2.031"
-                          ></path>
-                          <path d="M12 2.25v19.5"></path>
-                          <path d="M21.75 12H2.25"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <section id="portfolio">
+        <div id="container-portfolio">
+          <div id="item-portfolio">
+            <div id="content-item">
+              <h1>Nome do projeto</h1>
+              <div id="contents-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="./src/assets/images/github.svg" alt="" width="30px" />
+                <img src="./src/assets/images/globe.svg" alt="" width="30px" />
               </div>
             </div>
-            <div id="visitrepository">
-              <button>Clique Aqui para visitar o repositório</button>
+          </div>
+          <div id="item-portfolio">
+            <div id="content-item">
+              <h1>Nome do projeto</h1>
+              <div id="contents-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="./src/assets/images/github.svg" alt="" width="30px" />
+                <img src="./src/assets/images/globe.svg" alt="" width="30px" />
+              </div>
             </div>
+          </div>
+          <div id="item-portfolio">
+            <div id="content-item">
+              <h1>Nome do projeto</h1>
+              <div id="contents-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="./src/assets/images/github.svg" alt="" width="30px" />
+                <img src="./src/assets/images/globe.svg" alt="" width="30px" />
+              </div>
+            </div>
+          </div>
+          <div id="item-portfolio">
+            <div id="content-item">
+              <h1>Nome do projeto</h1>
+              <div id="contents-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="./src/assets/images/github.svg" alt="" width="30px" />
+                <img src="./src/assets/images/globe.svg" alt="" width="30px" />
+              </div>
+            </div>
+          </div>
+          <div id="button-ola">
+            <button>MAIS REPOSITÓRIOS...</button>
           </div>
         </div>
       </section>
-
-      <!--SESSÃO SERVIÇOS-->
-      <section class="sec--contact">
-        <div class="all--container">
-          <div id="section--contact-container">
-            <div id="form--container">
-              <form
-                action="https://formsubmit.co/guilhermenoliani@gmail.com"
-                method="POST"
-              >
-                <div class="group">
-                  <input required="" type="text" class="input" />
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>Name</label>
-                </div>
-                <br />
-                <br />
-                <div class="group">
-                  <input required="" type="text" class="input" />
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>Name</label>
-                </div>
-                <br />
-                <button type="submit">Enviar</button>
-              </form>
-            </div>
+      <section id="tecnologias">
+        <div id="container-tecnologias">
+          <div id="content-tecnologia">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              loading="lazy"
+            />
+          </div>
+          <div id="content-tecnologia">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              loading="lazy"
+            />
+          </div>
+          <div id="content-tecnologia">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              loading="lazy"
+            />
+          </div>
+          <div id="content-tecnologia">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              loading="lazy"
+            />
+          </div>
+          <div id="content-tecnologia">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
+      <section id="contact">.........</section>
     </main>
-    <script src="./assets/js/portfolio.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
