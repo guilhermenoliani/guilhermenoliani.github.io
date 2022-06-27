@@ -1,18 +1,36 @@
+const qS = (el) => document.querySelector(el);
+
+aboutMe.map((item) => {
+  let textAbout = item.h1;
+  let h1Text = item.p;
+  let aboutImage = item.img;
+
+  qS("#image-about img").src = item.img;
+  qS("#text-about h1").innerHTML = textAbout;
+  qS("#text-about p").innerHTML = h1Text;
+});
+
+tecnologias.map((item) => {
+  let tec = qS("#content-tecnologia").cloneNode(true);
+
+  tec.querySelector("#content-tecnologia img").src = item.image;
+  tec.querySelector("#content-tecnologia img").setAttribute("alt", item.name);
+  tec
+    .querySelector("#content-tecnologia img")
+    .setAttribute("loading", item.loading);
+
+  qS("#container-tecnologias").append(tec);
+});
+
 // AÇÕES
-let navMobile = document.querySelector("#nav-mobile-header");
+let navMobile = qS("#nav-mobile-header");
 navMobile.addEventListener("click", () => {
   let asideMobile = document.querySelector("aside");
   asideMobile.style.width = "100vw";
 });
 
-let closeNavMobile = document.querySelector("#menu-close");
+let closeNavMobile = qS("#menu-close");
 closeNavMobile.addEventListener("click", () => {
   let asideMob = document.querySelector("aside");
   asideMob.style.width = "0vw";
-});
-
-let gitHub = document.querySelector("#button-ola button");
-gitHub.addEventListener("click", () => {
-  let linkGitHub = "https://github.com/guilhermenoliani";
-  window.open(linkGitHub);
 });
