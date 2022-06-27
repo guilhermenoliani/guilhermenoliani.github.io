@@ -34,3 +34,7 @@ closeNavMobile.addEventListener("click", () => {
   let asideMob = document.querySelector("aside");
   asideMob.style.width = "0vw";
 });
+
+// ScrollReveal
+ScrollReveal().reveal("#container-home", { delay: 100 });
+ScrollReveal().reveal("#item-portfolio", { duration: 1000 });
