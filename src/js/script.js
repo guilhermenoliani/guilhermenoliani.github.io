@@ -36,5 +36,6 @@ closeNavMobile.addEventListener("click", () => {
 });
 
 // ScrollReveal
+ScrollReveal().reveal("#logo-header", { duration: 2000 });
 ScrollReveal().reveal("#container-home", { delay: 100 });
 ScrollReveal().reveal("#item-portfolio", { duration: 1000 });
