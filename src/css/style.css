@@ -481,6 +481,7 @@ footer {
     width: 40%;
   }
 }
+
 @media (max-width: 390px) {
   #container-header {
     width: 95%;
@@ -508,7 +509,7 @@ footer {
     width: 100%;
   }
   #portfolio {
-    height: 1200px;
+    height: 1400px;
   }
   #button-ola {
     width: 100%;
