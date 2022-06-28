@@ -5,7 +5,7 @@ aboutMe.map((item) => {
   let h1Text = item.p;
   let aboutImage = item.img;
 
-  qS("#image-about img").src = item.img;
+  qS("#image-about img").src = aboutImage;
   qS("#text-about h1").innerHTML = textAbout;
   qS("#text-about p").innerHTML = h1Text;
 });
@@ -13,6 +13,7 @@ aboutMe.map((item) => {
 tecnologias.map((item) => {
   let tec = qS("#content-tecnologia").cloneNode(true);
 
+  tec.querySelector("#content-tecnologia img").setAttribute("title", item.view);
   tec.querySelector("#content-tecnologia img").src = item.image;
   tec.querySelector("#content-tecnologia img").setAttribute("alt", item.name);
   tec

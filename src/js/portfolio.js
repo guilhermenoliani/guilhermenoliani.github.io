@@ -53,6 +53,7 @@ let tecnologias = [
   {
     id: 1,
     name: "HTML5 logo",
+    view: "HTML5",
     loading: "lazy",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -60,6 +61,7 @@ let tecnologias = [
   {
     id: 2,
     name: "CSS3 logo",
+    view: "CSS3",
     loading: "lazy",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
@@ -67,6 +69,8 @@ let tecnologias = [
   {
     id: 3,
     name: "JavaScript logo",
+    view: "JavaScript",
+
     loading: "lazy",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -74,6 +78,8 @@ let tecnologias = [
   {
     id: 4,
     name: "TypeScript logo",
+    view: "TypeScript",
+
     loading: "lazy",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
@@ -81,6 +87,8 @@ let tecnologias = [
   {
     id: 5,
     name: "ReactJs logo",
+    view: "ReactJS",
+
     loading: "lazy",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
