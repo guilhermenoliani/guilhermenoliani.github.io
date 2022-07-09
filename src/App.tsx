@@ -18,13 +18,27 @@ const App = () => {
 
   return (
     <C.Maintenance>
-      <img src={logo} alt="" />
-      <h1>EM BREVE</h1>
-      <div className="icons">
-        <img onClick={linked} src={linkedin} alt="" />
-        <img onClick={insta} src={instagram} alt="" />
-        <img onClick={git} src={gitHub} alt="" />
-      </div>
+      <C.ContainerMain>
+        <img className="logo" src={logo} alt="" width={300} />
+        <h1>EM BREVE</h1>
+        <C.Icons>
+          <img
+            onClick={linked}
+            src={linkedin}
+            alt="Icone do LinkedIn Guilherme Oliani"
+          />
+          <img
+            onClick={insta}
+            src={instagram}
+            alt="Icone do Instagram Guilherme Oliani"
+          />
+          <img
+            onClick={git}
+            src={gitHub}
+            alt="Icone do GitHub Guilherme Oliani"
+          />
+        </C.Icons>
+      </C.ContainerMain>
     </C.Maintenance>
   );
 };
