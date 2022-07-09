@@ -34,8 +34,8 @@ export const Maintenance = styled.div`
     width: 90%;
     margin-top: -50px;
     img {
-      padding: 20px;
-      height: 100%;
+      margin-right: 15px;
+        height: 100%;
       cursor: pointer;
       @media (max-width: 390px) {
         & {
